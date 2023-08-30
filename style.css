@@ -182,45 +182,64 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
-form {
-    background: #fff;
+.contact-box {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
 }
 
-form h3 {
-    color:#031540;
-    font-weight: 800;
+.contact h2 {
+    color: #031540;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-size: 40px;
+    position: relative;
+}
+
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 220px;
+    height: 3px;
+    background: #031540;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact p {
+    color: #031540;
+    max-width: 550px;
     margin-bottom: 20px;
 }
 
-form input, form textarea {
-    border: 0;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-    background: #fff;
-    font-size: 16px;
+.contact button {
+    background: #031540;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
 }
 
-form button {
-    padding: 15px;
-    background: #031540;
-    color: #fff;
-    font-size: 18px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 30px;
+.contact button:hover {
+    background: #072567;
 }
+
 
 .about {
     width: 100%;
@@ -233,6 +252,10 @@ form button {
 
 .about-text {
     width: 550px;
+    padding: 20px;
+    border: 2px solid white; /* Lägg till en vit ram */
+    border-radius: 8px; /* Rundande kanter */
+    text-align: center;
 }
 
 .main {
@@ -249,6 +272,7 @@ form button {
     font-size: 50px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    margin-top: 20px; /* Centrera texten */
 }
 
 .about-text h5 {
